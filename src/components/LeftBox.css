@@ -1,0 +1,22 @@
+.leftBox {
+  /* border: 1px solid orange; */
+  padding: 12px 40px;
+  background-color: #457b9d;
+}
+
+.leftBox .notes {
+  margin: 20px 0;
+  /* border: 1px solid salmon; */
+  background-color: #f1faee;
+  border-radius: 12px;
+  /* box-shadow: 2px 2px 5px #f1faee; */
+  padding: 12px;
+}
+
+.leftBox .notes h2 {
+  color: #e63946;
+}
+
+.leftBox .notes p {
+  color: #1d3557;
+}

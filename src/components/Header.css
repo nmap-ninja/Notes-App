@@ -1,0 +1,17 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 36px;
+  background-color: #1d3557;
+  color: #f1faee;
+}
+
+form input {
+  width: 240px;
+  height: 40px;
+  border-radius: 4px;
+  outline: none;
+  padding: 0 8px;
+  font-size: 16px;
+}

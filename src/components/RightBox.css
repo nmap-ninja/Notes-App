@@ -1,0 +1,39 @@
+.rightBox {
+  /* border: 1px solid crimson; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightBox div {
+  margin: 36px 0;
+  font-size: 24px;
+}
+
+.rightBox div label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.rightBox div input {
+  width: 95%;
+  font-size: 28px;
+  height: 40px;
+}
+
+.rightBox #desc {
+  font-size: 20px;
+}
+
+.rightBox button {
+  all: unset;
+  width: 120px;
+  height: 30px;
+  /* border: 1px solid gray; */
+  text-align: center;
+  margin: 0 200px 20px;
+  background-color: #457b9d;
+  border-radius: 12px;
+  color: #f1faee;
+  font-size: 20px;
+}

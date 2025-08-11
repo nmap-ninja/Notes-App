@@ -1,0 +1,10 @@
+.container {
+  width: 100%;
+  display: flex;
+  border: 1px solid black;
+}
+
+.rightBox,
+.leftBox {
+  flex-basis: 50%;
+}
