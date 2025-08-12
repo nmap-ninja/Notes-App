@@ -1,6 +1,6 @@
 import "./LeftBox.css";
 
-const LeftBox = ({ noteData }) => {
+const LeftBox = ({ noteData, onDelete }) => {
   return (
     <>
       <div className="leftBox">
@@ -8,7 +8,7 @@ const LeftBox = ({ noteData }) => {
           <div key={note.title} className="notes">
             <h2>{note.title}</h2>
             <p>{note.desc}</p>
-            <button>Delete</button>
+            <button onClick={() => onDelete(note.title)}>Delete</button>
           </div>
         ))}
       </div>

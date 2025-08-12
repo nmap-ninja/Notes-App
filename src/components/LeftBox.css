@@ -20,3 +20,13 @@
 .leftBox .notes p {
   color: #1d3557;
 }
+
+.notes button {
+  width: 88px;
+  height: 28px;
+  background-color: #e63946;
+  color: #f1faee;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+}

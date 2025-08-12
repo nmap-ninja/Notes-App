@@ -18,9 +18,13 @@ const NotesContainer = () => {
   const [noteDesc, setNoteDesc] = useState();
 
   const SetNote = () => {
-    let newNoteItem = { title: noteTitle, desc: noteDesc };
-    let newNoteData = [...noteData, newNoteItem];
-    setNoteData(newNoteData);
+    if (noteTitle === "" && noteDesc === "") {
+      alert("Please Insert Notes");
+    } else {
+      let newNoteItem = { title: noteTitle, desc: noteDesc };
+      let newNoteData = [...noteData, newNoteItem];
+      setNoteData(newNoteData);
+    }
   };
 
   const onNoteTitle = (title) => {
@@ -29,6 +33,11 @@ const NotesContainer = () => {
   const onNoteDesc = (desc) => {
     setNoteDesc(desc.target.value);
   };
+
+  const onHandleDelete = (deleteNote) => {
+    let newNotes = noteData.filter((note) => note.title != deleteNote);
+    setNoteData(newNotes);
+  };
   return (
     <div className="container">
       <RightBox
@@ -36,7 +45,7 @@ const NotesContainer = () => {
         NoteDesc={onNoteDesc}
         SetNote={SetNote}
       />
-      <LeftBox noteData={noteData} />
+      <LeftBox noteData={noteData} onDelete={onHandleDelete} />
     </div>
   );
 };
