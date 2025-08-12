@@ -7,22 +7,20 @@ const RightBox = ({ NoteTitle, NoteDesc, SetNote }) => {
       <div className="noteData">
         <div className="title">
           <label htmlFor="">Note Title</label>
-          <input onChange={() => NoteTitle(event)} type="text" />
+          <input onChange={(event) => NoteTitle(event)} type="text" />
         </div>
 
         <div className="desc">
           <label htmlFor="">Description</label>
           <textarea
-            onChange={() => NoteDesc(event)}
+            onChange={(event) => NoteDesc(event)}
             name="desc"
             id="desc"
             rows={10}
             cols={50}
           ></textarea>
         </div>
-        <button type="submit" onClick={() => SetNote()}>
-          Add Note
-        </button>
+        <button onClick={SetNote}>Add Note</button>
       </div>
     </div>
   );

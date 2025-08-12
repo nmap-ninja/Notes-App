@@ -14,8 +14,8 @@ const NotesContainer = () => {
     //   desc: "sdfkjlfjksfjsdklj",
     // },
   ]);
-  const [noteTitle, setNoteTitle] = useState("");
-  const [noteDesc, setNoteDesc] = useState("");
+  const [noteTitle, setNoteTitle] = useState();
+  const [noteDesc, setNoteDesc] = useState();
 
   const SetNote = () => {
     let newNoteItem = { title: noteTitle, desc: noteDesc };
